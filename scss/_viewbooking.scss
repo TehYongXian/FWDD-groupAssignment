@@ -1,0 +1,50 @@
+.slot{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-top: solid 1px;
+}
+
+.bookingslot {
+    margin-top: 5px;
+}
+
+.roomList {
+    display: flex;
+    background-color: green;
+    gap: 50px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.classRoomBtn{
+    border-radius: 7px;
+    background-color:green;
+}
+
+.viewbookingContainer {
+    width: 600px;
+    max-width: 600px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgb(0,0,0,0.2);
+
+    // align-items: center;
+    // border: solid 1px;
+    // border-radius: 5px;
+    
+}
+
+.backHome{
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: aquamarine;
+    height: 50px;
+    width: 100px;
+    background: orange;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
