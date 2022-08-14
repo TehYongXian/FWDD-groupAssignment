@@ -3,9 +3,26 @@
     background-color: aquamarine;
     height: 50px;
     width: 100px;
-    background: orange;
+    background: rgb(179, 116, 0);
     border: none;
     color: white;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.adminRegisterButton{
+    margin-top: 20px;
+    background-color: rgb(62, 255, 191);
+    height: 50px;
+    width: 100px;
+    background: rgb(26, 238, 210);
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.bodyContainer {
+    background-color: pink;
 }

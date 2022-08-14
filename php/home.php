@@ -21,7 +21,7 @@ include("auth_session.php");
     <div class="homeContainer">
         <h1>Student Home Page</h1>
         <div class="userInfo">
-            <button class="logout" >Logout</button>
+        <p><a href="logout.php">Logout</a></p>
         </div>
         <div class="navigation">
             <button class="button"onclick="window.location.href='../html/booking.html'">Booking</button>

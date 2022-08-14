@@ -17,25 +17,25 @@
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         // Check user is exist in the database
-        $query    = "SELECT * FROM `users` WHERE username='$username'
+        $query    = "SELECT * FROM `staffusers` WHERE username='$username'
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($con, $query) or die(mysql_error());
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
             // Redirect to user main page
-            header("Location: home.php");
+            header("Location: adminHome.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                  <p class='link'>Click here to <a href='staffLogin.php'>Login</a> again.</p>
                   </div>";
         }
     } else {
 ?>
     <div class="container">
-        <form class="form" id="login" action="login.php" method="post">
-            <h1 class="form__title">Login</h1>
+        <form class="form" id="login" action="staffLogin.php" method="post">
+            <h1 class="form__title">Staff Login</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group"> 
                 <!-- required -->
@@ -56,7 +56,7 @@
                 <a class="form__link" href="../php/registration.php" id="linkCreateAccount">Don't have an account? Create account</a>
             </p> -->
             <p class="form__text">
-                <a class="form__link" href="../php/staffLogin.php" id="linkCreateAccount">Staff Login</a>
+                <a class="form__link" href="../php/login.php" id="linkCreateAccount">Student Login</a>
             </p>
         </form>
     </div>

@@ -179,6 +179,69 @@ body {
   background-color: aquamarine;
   height: 50px;
   width: 100px;
+  background: rgb(179, 116, 0);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adminRegisterButton {
+  margin-top: 20px;
+  background-color: rgb(62, 255, 191);
+  height: 50px;
+  width: 100px;
+  background: rgb(26, 238, 210);
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.bodyContainer {
+  background-color: pink;
+}
+
+.slot {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-top: solid 1px;
+}
+
+.bookingslot {
+  margin-top: 5px;
+}
+
+.roomList {
+  display: flex;
+  background-color: green;
+  gap: 50px;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.classRoomBtn {
+  border-radius: 7px;
+  background-color: green;
+}
+
+.viewbookingContainer {
+  width: 600px;
+  max-width: 600px;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.backHome {
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: aquamarine;
+  height: 50px;
+  width: 100px;
   background: orange;
   border: none;
   color: white;

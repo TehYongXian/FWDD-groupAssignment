@@ -1,3 +1,8 @@
+<?php
+//include auth_session.php file on all user panel pages
+include("auth_session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +16,11 @@
     <title>Admin Home Page</title>
 </head>
 <body>
-    <!-- Admin interface -->
+    <!--  Admin interface -->
     <div class="homeContainer">
         <h1>Admin Home Page</h1>
         <div class="userInfo">
-            <button class="logout" >Logout</button>
+        <p><a href="logout.php">Logout</a></p>
         </div>
         <div class="navigation">
             <button class="button"onclick="window.location.href='../html/booking.html'">Booking</button>
@@ -23,6 +28,15 @@
             <!-- <button class="button">View Classroom</button> -->
             <button class="button">Feedback</button>
         </div>
+         
+        <div class="bodyContainer">
+                <p class="">
+            <a class="classRoomBtns" href="../php/registration.php" id="linkCreateAccount">Student account</a>
+            </p>
+            <p class="adminRegisterButton">
+                <a class="adminRegisterButton" href="../php/staffRegistration.php" id="linkCreateAccount">Staff account</a>
+            </p>
+            </div>
     </div>
 </body>
 </html>

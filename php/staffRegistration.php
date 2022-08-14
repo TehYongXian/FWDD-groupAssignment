@@ -20,13 +20,13 @@
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         $create_datetime = date("Y-m-d H:i:s");
-        $query    = "INSERT into `users` (username, password, email, create_datetime)
+        $query    = "INSERT into `staffusers` (username, password, email, create_datetime)
                      VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
         $result   = mysqli_query($con, $query);
         if ($result) {
             echo "<div class='form'>
                   <h3>You are registered successfully.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a></p>
+                  <p class='link'>Click here to <a href='staffLogin.php'>Login</a></p>
                   </div>";
         } else {
             echo "<div class='form'>
@@ -38,7 +38,7 @@
 ?>
     <div class="container">
     <form class="form " id="createAccount" method="post">
-            <h1 class="form__title">Student Registration</h1>
+            <h1 class="form__title">Staff Registration</h1>
             <div class="form__input-group">
                 <input type="text" id="signupUsername" class="form__input" name="username" autofocus placeholder="Username">
             </div>
