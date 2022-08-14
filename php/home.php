@@ -24,7 +24,7 @@ include("auth_session.php");
         <p><a href="logout.php">Logout</a></p>
         </div>
         <div class="navigation">
-            <button class="button"onclick="window.location.href='../html/booking.html'">Booking</button>
+            <button class="button"onclick="window.location.href='../php/booking.php'">Booking</button>
             <button class="button">Booking History</button>
             <!-- <button class="button">View Classroom</button> -->
             <button class="button" onclick="window.location.href='../php/feedback.php'">Feedback</button>

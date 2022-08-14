@@ -46,7 +46,8 @@ include("auth_session.php");
     } else {
 ?>
     <!-- Student interface -->
-    <div class="Container">
+    <div  >
+        <div class="container">
         <h1>Feedback Page</h1>
         <div class="userInfo">
         <p><a href="logout.php">Logout</a></p>
@@ -58,7 +59,7 @@ include("auth_session.php");
         </div>
     </div>
 	<br>
-	<div class="Container">
+	<div class="container">
         <form class="form" method="post">
             <label for="name" >Name:</label><br>
             <input type="text" id="studentname" name="studentname" required><br>
@@ -67,9 +68,11 @@ include("auth_session.php");
             <textarea name="comments" id="comments" style="width:100%;height:90px;padding:1%;font-family:sans-serif;font-size:0.2;" Required>
             </textarea>
             <br>
-            <input type="submit" name="submit" value="Submit">
+            <button type="submit" name="submit" class="button" value="Submit">Submit</button>
         </form> 
     </div>
+    </div>
+    
   
 <?php
     }

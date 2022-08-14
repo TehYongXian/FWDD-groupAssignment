@@ -3,22 +3,32 @@
     background-color: aquamarine;
     height: 50px;
     width: 100px;
-    background: rgb(179, 116, 0);
+    background: orange;
     border: none;
     color: white;
     border-radius: 4px;
     cursor: pointer;
 }
 
+button:hover {
+    background: #fff700;
+    color: black;
+}
+
 .adminRegisterButton{
     margin-top: 20px;
-    background-color: rgb(62, 255, 191);
-    height: 50px;
+    // background-color: rgb(62, 255, 191);
+    height: 60px;
     width: 100px;
     background: rgb(26, 238, 210);
     border: none;
     color: rgb(0, 0, 0);
     border-radius: 4px;
     cursor: pointer;
-    list-style: none;
+    text-decoration: none;
+}
+
+.adminRegisterButton:hover{
+    background: rgb(29, 158, 141);
+    color: white;
 }

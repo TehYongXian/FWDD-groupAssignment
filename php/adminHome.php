@@ -17,26 +17,30 @@ include("auth_session.php");
 </head>
 <body>
     <!--  Admin interface -->
-    <div class="homeContainer">
-        <h1>Admin Home Page</h1>
+    <div>
+        <div class="container">
+            <h1>Admin Home Page</h1>
         <div class="userInfo">
         <p><a href="logout.php">Logout</a></p>
         </div>
         <div class="navigation">
-            <button class="button"onclick="window.location.href='../html/booking.html'">Booking</button>
+            <button class="button"onclick="window.location.href='../php/staffBooking.php'">Booking</button>
             <button class="button">Booking History</button>
             <!-- <button class="button">View Classroom</button> -->
             <button class="button">Feedback</button>
         </div>
+        </div>
+        
          
-        <div class="bodyContainer">
-                <p class="">
-            <a class="classRoomBtns" href="../php/registration.php" id="linkCreateAccount">Student account</a>
-            </p>
-            <p class="adminRegisterButton">
-                <a class="adminRegisterButton" href="../php/staffRegistration.php" id="linkCreateAccount">Staff account</a>
-            </p>
-            </div>
+        <div class="container">
+            <h3>Register Account</h3>
+                <!-- <p class=""> -->
+            <a class="adminRegisterButton form__link" href="../php/registration.php" id="linkCreateAccount">Student account</a>
+            <!-- </p> -->
+            <!-- <p class="adminRegisterButton"> -->
+                <a class="adminRegisterButton form__link" href="../php/staffRegistration.php" id="linkCreateAccount">Staff account</a>
+            <!-- </p> -->
+        </div>
     </div>
 </body>
 </html>

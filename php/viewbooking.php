@@ -1,3 +1,8 @@
+<?php
+//include auth_session.php file on all user panel pages
+include("auth_session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +15,11 @@
     <link rel="icon" href="/media/happyDog.png">
     <title>ViewBooking</title>
 </head>
-<body>
+<div>
     <!-- Student interface -->
-    
+    <div>
+
+    </div>
     <div class="viewbookingContainer">
         <h1>View Booking Page</h1>
         <button class="backHome"onclick="window.location.href='home.html'">Home</button>
@@ -102,5 +109,6 @@
             </ul>
         </div>
     </div>
+</div>
 </body>
 </html>
