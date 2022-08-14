@@ -37,7 +37,7 @@
     } else {
 ?>
     <div class="container">
-    <form class="form " id="createAccount" method="post">
+    <form class="form" id="createAccount" method="post">
             <h1 class="form__title">Staff Registration</h1>
             <div class="form__input-group">
                 <input type="text" id="signupUsername" class="form__input" name="username" autofocus placeholder="Username">

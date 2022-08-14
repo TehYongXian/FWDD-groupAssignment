@@ -199,10 +199,6 @@ body {
   list-style: none;
 }
 
-.bodyContainer {
-  background-color: pink;
-}
-
 .slot {
   display: flex;
   margin-top: 10px;
@@ -214,17 +210,8 @@ body {
   margin-top: 5px;
 }
 
-.roomList {
-  display: flex;
-  background-color: green;
-  gap: 50px;
-  list-style: none;
-  margin-top: 5px;
-}
-
 .classRoomBtn {
   border-radius: 7px;
-  background-color: green;
 }
 
 .viewbookingContainer {
